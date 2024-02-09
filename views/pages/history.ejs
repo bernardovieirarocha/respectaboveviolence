@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/favicon.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>History Page</title>
+</head>
+
+<body>
+
+    <style>
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            margin-top: 0;
+            margin-right: 0;
+
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 48%;
+            width: auto;
+            margin-top: -23px;
+            padding: 17px;
+            color: grey;
+            font-weight: bold;
+            font-size: 19px;
+            transition: 0.4s ease;
+            border-radius: 0 5px 5px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .text {
+            color: #bbb;
+            font-size: 16px;
+            padding: 10px 14px;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 14px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 1s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        .responsive {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+    <nav class="navbar">
+        <div class="navbar-logo" href="#">
+            <div class="logo-image">
+                <img src="/images/logo.svg">
+            </div>
+            <div class="logo-name">
+                Respect Above Violence
+            </div>
+        </div>
+        <div class="contacts">
+            <a class="contacts-links" href="https://web.whatsapp.com/">
+                <img src="/images/whatsapp-icon.svg"  >
+            </a>
+            <a class="contacts-links" href="https://www.instagram.com/rav.ngo/">
+                <img src="/images/instagram-icon.svg">
+            </a>
+            <a class="contacts-links"
+                href="mailto:respectaboveviolence@gmail.com?subject=Repect Above Violence Support">
+                <img src="/images/email-icon.svg">
+            </a>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+
+        <div class="nav-links">
+            <a class="pages-links" href="/">
+                About us
+            </a>
+            <a class="pages-links" href="/history">
+                History
+            </a>
+            <a class="pages-links" href='/campaign'>
+                Campaign
+            </a>
+            <a class="pages-links" href='/help'>
+                Help us
+            </a>
+        </div>
+
+        <div class="content">
+            <h1>History</h1>
+            <div class="information">
+                <p>
+                    The main founder had the idea of creating the Respect Above Violence organization after seeing what
+                    bullying did to his son. So, he partnered up with some of his work colleagues, like John Branches
+                    and Marcelo Fields, to start the organization and to create a campaign. Since then, Respect Above
+                    Violence already helped a lot of children, not only making the students more aware about the effects
+                    of bullying but also giving psychological assistance to any child who needs it.
+                </p>
+
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img class='responsive'
+                            src="https://media.discordapp.net/attachments/724748441976307784/877278549625667584/A_PALESTRA-CRA-11.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img class='responsive'
+                            src="https://cdn.discordapp.com/attachments/724748441976307784/877279720499195994/i349512.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img class='responsive'
+                            src="https://cdn.discordapp.com/attachments/724748441976307784/877646563776790558/0sJ2gk_0OdY7DgL00.png">
+                    </div>
+                    <a class="prev" style='color: whitesmoke' onclick="plusSlides(-1)"><i class="fa fa-arrow-left"
+                            aria-hidden="true"></i></a>
+                    <a class="next" style='color: whitesmoke' onclick="plusSlides(1)"><i class="fa fa-arrow-right"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Copyright -->
+        <div class="copyright">
+            © 2021 Copyright:
+            <a href="https://github.com/upwardweb">GPA.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="/js/slideshow.js"></script>
+</body>
+
+</html>
